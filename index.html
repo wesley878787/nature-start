@@ -354,35 +354,36 @@
                 text-decoration: none;
                 font-size: 20px;
             }
-            @media (max-width: 768px) {
-                .right-menu .about-us ul {
+           @media (max-width: 768px) {
+                .top-nav ul {
+                    flex-direction: column;
                     text-align: center;
                 }
                 .right-menu .about-us {
                     flex-direction: column;
                 }
-            }
-            @media (max-width: 480px) {
-                .logo {
-                    width: 50px;
-                    height: 50px;
+                .cta, .goals, .comments {
+                    grid-template-columns: 1fr;
+                    width: 100%;
+                    font-size: 14px;
+                    padding: 20px;
                 }
+            }
+
+            @media (max-width: 480px) {
                 .right-menu {
                     padding: 5px;
                 }
-                .right-menu form input,
-                .right-menu form textarea {
+                .cta, .goals, .comments {
+                    width: 100%;
                     font-size: 14px;
-                    padding: 6px;
-                }
-                .right-menu form button {
-                    padding: 6px;
-                    font-size: 14px;
+                    padding: 15px;
                 }
                 .socials a {
                     font-size: 18px;
                 }
             }
+
             /* Footer */
             footer {
                 text-align: center;
