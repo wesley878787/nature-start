@@ -368,14 +368,39 @@
                     font-size: 14px;
                     padding: 20px;
                 }
-                .cta{
-                    height:30%;
-                }
-               .cta .cta-img{
-                   padding:50px;
-                   height:20%;
-                   width:50%;
-               }
+                .cta {
+                background-size: cover;
+                height: 100vh;
+                border-radius: 10px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 2fr; /* Left takes 1/3, right takes 2/3 */
+                align-items: start;
+                margin-top: 10%;
+                font-weight: 700;
+                border-top: 2px solid;
+                gap: 1%;
+            }
+            .cta h1 {
+                padding: 59px;
+                cursor: pointer;
+            }
+            .cta h1:hover {
+                color: darkred;
+                transition: 1s;
+            }
+            .cta .cta-img {
+                display: flex;
+                flex-direction: column;
+            }
+            .cta .cta-img img {
+                height: 41vh;
+                object-fit: cover;
+            }
+
+            .cta .cta-comments {
+                padding: 5%;
+            }
             }
 
             @media (max-width: 480px) {
@@ -390,14 +415,39 @@
                 .socials a {
                     font-size: 18px;
                 }
-                .cta{
-                    height:30%;
-                }
-                .cta .cta-img{
-                   padding:50px;
-                   height:20%;
-                    width:50%;
-               }
+               .cta {
+                background-size: cover;
+                height: 100vh;
+                border-radius: 10px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 2fr; /* Left takes 1/3, right takes 2/3 */
+                align-items: start;
+                margin-top: 10%;
+                font-weight: 700;
+                border-top: 2px solid;
+                gap: 1%;
+            }
+            .cta h1 {
+                padding: 59px;
+                cursor: pointer;
+            }
+            .cta h1:hover {
+                color: darkred;
+                transition: 1s;
+            }
+            .cta .cta-img {
+                display: flex;
+                flex-direction: column;
+            }
+            .cta .cta-img img {
+                height: 41vh;
+                object-fit: cover;
+            }
+
+            .cta .cta-comments {
+                padding: 5%;
+            }
             }
 
             /* Footer */
