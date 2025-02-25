@@ -6,7 +6,7 @@
         <title>Nature's Defender</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <style>
-                         * {
+            * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
@@ -15,7 +15,7 @@
 
             body {
                 overflow-y: auto;
-                padding-top: 28px;
+                padding-top: 38px;
             }
 
             /* Navigation Bar */
@@ -46,20 +46,21 @@
             }
 
             /* Sections */
+
             .blackholes {
                 align-items: center;
                 justify-content: center;
                 padding: 98px;
                 height: 42vh;
                 background: linear-gradient(rgba(20, 122, 218, 0.5), rgba(0, 0, 0, 0.5)),
-                    url(https://github.com/wesley878787/nature-start/blob/main/pexels-singkham-178541-1108572.jpg?raw=true);
+                    url(images/pexels-singkham-178541-1108572.jpg);
                 background-size: cover;
                 background-position: center;
                 margin-bottom: 15%;
             }
             .universe {
                 background: linear-gradient(rgba(20, 122, 218, 0.5), rgba(0, 0, 0, 0.5)),
-                    url(https://github.com/wesley878787/nature-start/blob/main/pexels-pixabay-70365.jpg?raw=true);
+                    url(images/pexels-pixabay-70365.jpg);
                 height: 100vh;
                 background-size: cover;
                 background-position: center;
@@ -92,14 +93,14 @@
             
             .goals {
                 display: grid;
-                grid-template-columns: 1fr 2fr;
+                grid-template-columns: 1fr 2fr; /* Left takes 1/3, right takes 2/3 */
                 align-items: start;
                 gap: 23px;
-                padding: 40px;
+                padding: 69px;
                 border-top: 2px solid;
-                width: 100%;
-                height: auto;
-                margin-bottom: 10%;
+                width: 90%;
+                height: 100vh;
+                margin-bottom: 19%;
             }
 
             .goals-set {
@@ -141,45 +142,211 @@
             
             .comments {
                 display: grid;
-                grid-template-columns: 1fr 2fr;
+                grid-template-columns: 1fr 2fr; /* Left takes 1/3, right takes 2/3 */
                 align-items: start;
                 gap: 20px;
-                padding: 40px;
+                padding: 50px;
                 border-top: 2px solid;
                 border-bottom: 2px solid;
-                width: 100%;
-                height: auto;
+                width: 90%;
+                height: 100vh;
                 margin: auto;
             }
 
-            /* CTA Section Fix */
+            .comments-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .comments-text h1 {
+                font-weight: 800;
+                color: green;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+
+            .comments-text p {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            .comments-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .comments-description {
+                padding: 15px;
+                border-left: 2px solid green;
+            }
+
+            .comments-description h2 {
+                color: green;
+            }
+
+            .comments-description p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            .magazine {
+                height: 55vh;
+                background: linear-gradient(rgba(20, 122, 218, 0.5), rgba(0, 0, 0, 0.5)),
+                    url(images/pexels-sohi-807598.jpg);
+                background-size: cover;
+                background-position: center;
+                padding: 20%;
+                margin: -10% 0% 7% 5%;
+                border-top: 7px solid;
+                width: 90%;
+            }
+
+            .magazine h1 {
+                color: #fff;
+            }
+
+            .magazine p {
+                color: #ffffff;
+            }
+
+            /* Paragraph Styles */
+            .universe p {
+                font-weight: 600;
+                margin: 21%;
+                background-color: rgba(216, 232, 219, 0.65);
+                border-radius: 10px;
+                padding: 115px 66px;
+                position: absolute;
+                bottom: -48%;
+                left: 3%;
+                margin-left: 27%;
+            }
+            .blackholes p {
+                font-family: Times New Roman;
+                font-weight: 900;
+                font-size: 16px;
+            }
+
+            /* Buttons */
+            .universe-btn {
+                background: rgba(12, 113, 4, 0.82);
+                padding: 21px 36px;
+                border: none;
+                cursor: pointer;
+                color: white;
+                font-size: 16px;
+                border-radius: 8px;
+                position: absolute;
+                bottom: 3%;
+                left: 22%;
+            }
+
+            .login-btn {
+                background: #ff4b07;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+            }
+            
+
+            /* Call to Action */
             .cta {
                 background-size: cover;
-                height: auto;
+                height: 100vh;
                 border-radius: 10px;
                 width: 100%;
                 display: grid;
-                grid-template-columns: 1fr 2fr;
+                grid-template-columns: 1fr 2fr; /* Left takes 1/3, right takes 2/3 */
                 align-items: start;
                 margin-top: 10%;
                 font-weight: 700;
                 border-top: 2px solid;
                 gap: 1%;
-                padding: 20px;
             }
-
+            .cta h1 {
+                padding: 59px;
+                cursor: pointer;
+            }
+            .cta h1:hover {
+                color: darkred;
+                transition: 1s;
+            }
+            .cta .cta-img {
+                display: flex;
+                flex-direction: column;
+            }
             .cta .cta-img img {
-                max-width: 100%;
-                height: auto;
+                height: 41vh;
                 object-fit: cover;
             }
 
+            .cta .cta-comments {
+                padding: 5%;
+            }
+
+            /* Right Menu */
+            .right-menu {
+                background: #151515;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 17px;
+                border-top: 2px solid white;
+                height: 47vh;
+                margin-top: 25%;
+            }
+
+            .right-menu .about-us {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                color: white;
+                margin-top: 15px;
+            }
+            .right-menu .about-us ul {
+                list-style: none;
+                text-align: left;
+            }
+            .right-menu form {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .right-menu form input,
+            .right-menu form textarea {
+                width: 100%;
+                padding: 5px;
+            }
+            .right-menu form button {
+                background: #ff4b07;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+                background: url("space-logo.png") no-repeat center/cover;
+                margin: 10px 0;
+            }
+
+            /* Social Media Links */
             .socials {
                 display: flex;
                 justify-content: center;
                 gap: 15px;
                 border-top: 1px solid #fff;
-                margin-top: 10px;
+                margin-top: 10px; 
                 padding-top: 10px;
             }
             .socials a {
@@ -187,7 +354,36 @@
                 text-decoration: none;
                 font-size: 20px;
             }
-
+            @media (max-width: 768px) {
+                .right-menu .about-us ul {
+                    text-align: center;
+                }
+                .right-menu .about-us {
+                    flex-direction: column;
+                }
+            }
+            @media (max-width: 480px) {
+                .logo {
+                    width: 50px;
+                    height: 50px;
+                }
+                .right-menu {
+                    padding: 5px;
+                }
+                .right-menu form input,
+                .right-menu form textarea {
+                    font-size: 14px;
+                    padding: 6px;
+                }
+                .right-menu form button {
+                    padding: 6px;
+                    font-size: 14px;
+                }
+                .socials a {
+                    font-size: 18px;
+                }
+            }
+            /* Footer */
             footer {
                 text-align: center;
                 padding: 20px;
@@ -195,36 +391,33 @@
                 color: white;
             }
 
-            @media (max-width: 768px) {
-                .top-nav ul {
-                    flex-direction: column;
-                    text-align: center;
-                }
-                .right-menu .about-us {
-                    flex-direction: column;
-                }
-                .cta, .goals, .comments {
-                    grid-template-columns: 1fr;
-                    width: 100%;
-                    font-size: 14px;
-                    padding: 20px;
-                }
+            .languages {
+                color: #000000;
+                text-align: left;
+                width: 69%;
+                padding: 7%;
+                margin-top: -10%;
             }
 
-            @media (max-width: 480px) {
-                .right-menu {
-                    padding: 5px;
-                }
-                .cta, .goals, .comments {
-                    width: 100%;
-                    font-size: 14px;
-                    padding: 15px;
-                }
-                .socials a {
-                    font-size: 18px;
-                }
+            .languages h3 {
+                font-size: 18px;
+                margin-bottom: 8px;
             }
 
+            .languages ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .languages ul li {
+                font-size: 14px;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
         </style>
     </head>
     <body>
