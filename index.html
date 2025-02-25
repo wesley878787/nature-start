@@ -354,12 +354,19 @@
                 text-decoration: none;
                 font-size: 20px;
             }
-            @media (max-width: 768px) {
+             @media (max-width: 768px) {
+                nav.top-nav ul {
+                    flex-direction: column;
+                    text-align: center;
+                }
                 .right-menu .about-us ul {
                     text-align: center;
                 }
                 .right-menu .about-us {
                     flex-direction: column;
+                }
+                section {
+                    font-size: 16px;
                 }
             }
             @media (max-width: 480px) {
@@ -373,14 +380,18 @@
                 .right-menu form input,
                 .right-menu form textarea {
                     font-size: 14px;
-                    padding: 6px;
+                    padding: 8px;
                 }
                 .right-menu form button {
-                    padding: 6px;
+                    padding: 8px;
                     font-size: 14px;
                 }
                 .socials a {
                     font-size: 18px;
+                }
+                section {
+                    font-size: 14px;
+                    padding: 15px;
                 }
             }
             /* Footer */
